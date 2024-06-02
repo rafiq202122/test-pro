@@ -1,0 +1,475 @@
+/* =====================Common Import Starts Here======================= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* =====================Common Import emdss Here======================= */
+
+/* =====================Common CSS Starts Here======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 1166px;
+  margin: 0 auto;
+}
+.title{
+  padding-top: 68px;
+}
+.title h4{
+  font-weight: 500; 
+  font-size: 16px;
+  color: var(--secondaryolor);
+  
+
+}
+.title h2{
+  font-weight: 600; 
+  font-size: 36px;
+  color: var(--primaryColor);
+  line-height: 150%;
+  margin-top: 8px;
+  margin-bottom: 64px;
+
+}
+:root{
+   
+    --primaryColor:#203239;
+    --primaryLightColor:rgba(32, 50, 57, .5);
+    --secondaryolor:#F6762E;
+    --bgColor:#EEEDDE;
+    --whiteColor:#ffffff;
+}
+
+/* ======================Common CSS Ends Here=========================*/
+
+/* =====================Navbar Starts Here======================= */
+nav{
+  padding-top: 50px;
+  background: var(--bgColor);
+}
+nav .nav_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+nav ul li {
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--primaryColor);
+    transition: 0.4s;
+    position: relative;
+
+}
+nav ul li:hover{
+    font-weight: 600;
+}
+nav ul li::after{
+    width: 0%;
+    height: 3px;
+    background: var(--secondaryolor);
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    transition: 0.4s;
+    
+}
+nav ul li:hover::after{
+  width: 50%;
+ 
+}
+
+/* =====================Navbar ends Here======================== */
+
+/* =====================banner starts Here======================== */
+#banner{
+  background:var(--bgColor);
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.banner_wrapper{
+  display: flex;
+  align-items: center;
+}
+ #banner .left{
+  width: 65%;
+ 
+ }
+ #banner .right{
+  width: 35%;
+  text-align: end;
+ }
+ .left h1{
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 150%;
+  color: var(--primaryColor);
+  width: 777px;
+ }
+ .left p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--primaryLightColor);
+  width: 544px;
+  margin-top: 24px;
+ }
+ #banner .left input{
+  width: 508px;
+  height: 70px;
+  border: none;
+  border-radius: 15px;
+  padding-left: 56px;
+ }
+ #banner .left input::placeholder{
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--primaryLightColor);
+ }
+ #banner .banner_icon{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 20px;
+  margin-left: 20px;
+  transform: translateY(-50%);
+ }
+ #banner .left a{
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--primaryLightColor);
+  display: inline-block;
+  background: var(--whiteColor);
+  border-radius: 15px;
+  padding: 23px 41px;
+ 
+ }
+ #banner .banner_input_wrapper{
+  display: flex;
+  gap: 15px;
+  margin-top: 55px;
+ }
+ #banner .input_box{
+  position: relative;
+  
+ }
+/* =====================banner ends Here======================== */
+
+/* =====================properti starts Here======================== */
+#properti{
+  margin-top: 100px;
+  
+
+}
+#properti h2{
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: var(--primaryColor);
+}
+
+#properti .properti_wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+#properti .item{
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 4px rgba(32, 50, 57, .20);
+  padding: 20px 33px;
+  position: relative;
+  
+}
+
+#properti .item::after{
+  content: '';
+  width: 8px;
+  height: 30px;
+ border-radius: 6px;
+  background: var(--secondaryolor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 17px;
+ 
+  
+}
+#properti .item_wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+#properti .item h3{
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primaryColor);
+  
+}
+#properti .item h4{
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--secondaryolor);
+  margin-right: -10px;
+  
+}
+#properti .item p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 8px;
+  color: var(--primaryLightColor);
+  
+}
+#properti .item a{
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 48px;
+  display: inline-block;
+  color: var(--primaryColor);
+  
+}
+#properti .item .item_booking_p {
+  margin-bottom: 30px;
+}
+/* =====================properti ends Here======================== */
+
+/* =====================residen starts Here======================== */
+#residen{
+  background: var(--bgColor);
+  margin-top: 100px;
+  padding-bottom: 163px;
+
+}
+/* .title{
+  padding-top: 68px;
+}
+.title h4{
+  font-weight: 500; 
+  font-size: 16px;
+  color: var(--secondaryolor);
+  padding-top: 68px;
+
+}
+.title h2{
+  font-weight: 600; 
+  font-size: 36px;
+  color: var(--primaryColor);
+  line-height: 150%;
+  margin-top: 8px;
+  margin-bottom: 64px;
+
+} */
+.residenwrapper{
+  display: flex;
+}
+.residenImages{
+  position: relative;
+  width: 50%;
+}
+
+.residenTwo{
+  position: absolute;
+  top: 60px;
+  left:167px;
+}
+.residenTextArea{
+  width: 50%;
+  padding-top: 40px;
+}
+#residen .residenTextArea h2{
+  font-weight: 600; 
+  font-size: 36px;
+  color: var(--primaryColor);
+  line-height: 150%;
+  margin-top: 8px;
+}
+
+#residen .residenTextArea p{
+  font-weight: 300; 
+  font-size: 16px;
+  color: var(--primaryColor);
+  line-height: 30px;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+#residen .residenTextArea a{
+  font-weight: 600; 
+  font-size: 16px;
+  color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+  padding: 13px 41px;
+  display: inline-block;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+#residen .residenTextArea a:hover {
+ 
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+  
+ 
+  
+}
+.residenPhoneIcon{
+  margin-right: 12px;
+}
+.explorResiden{
+  margin-left: 48px;
+}
+/* =====================residen ends Here======================== */
+
+/* =====================kota starts Here======================== */
+#kota{
+
+}
+.kotawrapper{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 64px;
+}
+#kota .kotaItem{
+  width: 32%;
+}
+#kota .kotaItem h3{
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-top: 16px;
+}
+#kota .kotaItem p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  color: var(--primaryColor);
+  margin-top: 8px;
+}
+.kotaImgeTwo{
+  border-radius: 10px;
+}
+/* =====================kota ends Here======================== */
+
+/* =====================footer starts Here======================== */
+footer{
+  background: var(--bgColor);
+  padding-bottom: 50px;
+}
+.footer_left{
+width: 50%;
+
+}
+
+.footer_right{
+width: 50%;
+text-align: right;
+}
+
+.footer_wrapper{
+  display: flex;
+ }
+ .footer_left h2{
+  font-weight: 600;
+  font-size: 36;
+  line-height: 150%;
+  color: var(--primaryColor);
+ }
+ .footerLeftItem{
+  width: 274px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  background: var(--whiteColor);
+  border-radius: 10px;
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+  /* align-items: center; */
+ }
+ .footerLeftItem h4{
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primaryColor);
+  padding-left: 11px;
+ }
+ .footerLeftItem h5{
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primaryColor);
+  margin-top: 8px;
+  padding-left: 12px;
+ }
+ .footerLeftItem a{
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+  border-radius: 5px;
+  padding: 10px 17px;
+  display: inline-block;
+  margin-top: 27px;
+  
+ }
+ .footerCallIcon{
+  font-size: 34px;
+ }
+ .footerItemWrapper{
+  display: flex;
+  gap: 24px;
+  margin-top: 74px;
+  padding-bottom: 48px;
+ }
+ .footer_right h2{
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: var(--primaryColor);
+  padding-top: 88px;
+  padding-right: 57px;
+  padding-bottom: 70px;
+  
+ }
+ .footer_right img{
+  margin-right: 105pxp;
+ }
+
+ /* footer contact starts */
+ .footerContact{
+  width: 100%;
+  padding: 31px 0;
+  background:var(--primaryColor);
+ }
+
+ footer ul{
+  display: flex;
+  gap: 64px;
+ }
+ footer ul li{
+  color: var(--whiteColor);
+  font-size: 24px;
+ 
+ }
+ .footer_Contact_wrapper{
+  display: flex;
+  justify-content: space-between;
+ }
+ /* footer contact ends */
+  
+/* =====================footer ends Here======================== */
+
